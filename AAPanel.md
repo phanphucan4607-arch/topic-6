@@ -68,17 +68,81 @@ Tại bảng hiện ra giữ nguyên ở thẻ Create site và điền các nộ
     Phiên bản PHP Nhấn chọn phiên bản PHP 7.4 hoặc PHP 8.1 tùy theo loại bạn đã cài trên máy chủ
 
 ## Thao tác 2: Tạo Website Laravel (laravel.phucan.vietnix.tech)
+Làm tuong tự như wp lưu ý lưu lại thong tin su khi tạo xong
 
-Tại bảng hiện ra bạn giữ nguyên ở thẻ Create site và nhập chính xác các thông số như sau
+Database user profile
 
-    Tên miền Nhập địa chỉ laravel.phucan.vietnix.tech
+User: sql_laravel_phucan_vietnix_tech
 
-    Cài đặt SSL Bạn hãy BỎ TÍCH ô Apply for SSL vì hiện tại chưa trỏ IP thật cho tên miền này.
+Password: f01b8f2a88da
 
-    Mô tả và Đường dẫn Bạn cứ để hệ thống tự động điền theo tên miền.
+<img width="1865" height="1002" alt="Screenshot from 2026-04-21 02-34-55" src="https://github.com/user-attachments/assets/40bbda9e-76a7-4fe8-a789-90899873c3ee" />
 
-    Cơ sở dữ liệu Tại phần Database bạn nhấn chọn MySQL. Lúc này hệ thống tự sinh ra Tên, Người dùng và Mật khẩu.
-    🚨 Lưu ý cực kỳ quan trọng Bạn hãy sao chép ngay các thông tin Database này đặc biệt là Mật khẩu dán vào file Note. Lát nữa khi tải mã nguồn Laravel lên bạn bắt buộc phải điền thông tin này vào file cấu hình .env thì web mới chạy được.
+## Cấu hình Document Root và URL Rewrite cho Laravel
+Bước 1 Truy cập thư mục Laravel
 
-    Phiên bản PHP Nhấn chọn phiên bản PHP bạn đã cài đặt trên máy chủ thường là PHP 8.1 hoặc PHP 8.2.
+Tại menu cột trái bạn chọn mục Files. Tiếp theo bạn tìm và nhấn mở thư mục laravel.phucan.vietnix.tech để vào bên trong.
+Bước 2 Dọn dẹp thư mục
+
+Bạn hãy chọn và xóa bỏ hai file index.html và file 404.html mặc định đang có sẵn trong thư mục này để tránh bị xung đột khi chạy website.
+Bước 3 Tải lên mã nguồn
+
+Nhấn vào nút Upload ở thanh công cụ phía trên. Sau đó bạn chọn file mã nguồn Laravel có định dạng .zip từ máy tính của bạn để bắt đầu tải lên máy chủ.
+Bước 4 Giải nén mã nguồn
+
+Sau khi quá trình tải lên hoàn tất bạn nhấn chuột phải vào file .zip vừa tải xong. Cuối cùng bạn chọn lệnh Unzip để giải nén toàn bộ mã nguồn website ra thư mục hiện tại.
+
+và sau khi giải nén xong chúng ta coppy ra thư mục cha y như wp
+
+<img width="1865" height="1002" alt="image" src="https://github.com/user-attachments/assets/ab5df8da-6961-445e-8dc5-7f0c6ee24eac" />
+
+## cấu hình Document Root và URL Rewrite 
+Bước 1 Mở bảng cấu hình website
+
+Tại menu cột trái bạn quay lại mục Website. Sau đó bạn nhấn thẳng vào tên miền laravel.phucan.vietnix.tech hoặc nhấn chữ Conf ở cột thao tác bên phải để mở bảng cài đặt.
+Bước 2 Cấu hình đường dẫn chạy web
+
+Tại menu bên trái của bảng cấu hình vừa hiện ra bạn chọn mục Site directory.
+Bước 3 Chọn thư mục chạy công khai
+
+Ở dòng Running directory bạn nhấn nút xổ xuống. Lúc này danh sách sẽ hiện ra mục /public. Bạn hãy nhấn chọn đúng mục /public này.
+Bước 4 Lưu cài đặt
+
+Sau khi đã chọn xong bạn nhấn nút Save để hệ thống xác nhận đường dẫn chạy cho mã nguồn Laravel.
+
+<img width="1865" height="1002" alt="image" src="https://github.com/user-attachments/assets/9537b665-8436-4336-8487-59e1b66bc1b4" />
+
+<img width="1865" height="1002" alt="image" src="https://github.com/user-attachments/assets/f6296b4d-d972-44a0-86cc-8b2b4b0591c5" />
+
+##  Nối Database và Sửa file hosts
+
+Bước 1 Tìm và mở file cấu hình
+
+Tại giao diện aaPanel bạn vào menu Files. Sau đó bạn mở thư mục laravel.phucan.vietnix.tech. Bạn tìm file có tên là .env (file này có dấu chấm ở đầu tên). Hãy nhấp đúp vào file đó để mở cửa sổ soạn thảo.
+Bước 2 Nhập thông tin Database
+
+Trong cửa sổ soạn thảo vừa hiện ra bạn cuộn xuống tìm đoạn có chữ DB_DATABASE và các dòng liên quan. Bạn tiến hành xóa thông tin cũ và điền thông tin của bạn vào 3 dòng như sau
+
+    DB_DATABASE sql_laravel_phucan_vietnix_tech
+
+    DB_USERNAME sql_laravel_phucan_vietnix_tech
+
+    DB_PASSWORD (Dán mật khẩu Database Laravel bạn đã lưu vào đây)
+
+🚨 Lưu ý quan trọng Khi dán bạn phải cẩn thận không để dính khoảng trắng ở đầu hay cuối của mật khẩu.
+Bước 3 Lưu và đóng file
+
+Sau khi đã điền xong bạn nhìn lên góc trên cùng bên trái của cửa sổ soạn thảo nhấn vào biểu tượng đĩa mềm hoặc nhấn phím tắt Ctrl S để lưu lại. Cuối cùng bạn đóng cửa sổ soạn thảo đó đi là hoàn thành.
+
+<img width="1865" height="1002" alt="image" src="https://github.com/user-attachments/assets/f74827c3-c392-428e-8101-4d08321c205e" />
+
+## sửa lại file hosts lần nữa thêm ip của laravel vào 
+
+<img width="1168" height="803" alt="image" src="https://github.com/user-attachments/assets/9c37c686-9600-476e-bcd3-6298bce71119" />
+
+Kiểm tra đường dẫn
+
+Bạn gõ địa chỉ sau vào thanh địa chỉ của trình duyệt
+
+http://laravel.phucan.vietnix.tech
 
