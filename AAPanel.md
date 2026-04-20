@@ -56,16 +56,14 @@ Sau khi nhấn Skip, aaPanel sẽ tự động hiện ra một bảng chọn có
 
     FTP: Không cần thiết, có thể bỏ qua hoặc để mặc định.
 
-=> Quan trọng: Ở phía dưới, hãy chọn chế độ Fast (màu xanh) thay vì Compiled để tiết kiệm thời gian. Sau đó nhấn nút One-click.
+## Tạo Website WordPress (wp.phucan.vietnix.tech)
 
-<img width="817" height="403" alt="image" src="https://github.com/user-attachments/assets/5f7d6641-387a-4e3c-9859-4e8da63c80a0" />
+Tại bảng hiện ra giữ nguyên ở thẻ Create site và điền các nội dung như sau
 
+    Tên miền Nhập chính xác địa chỉ wp.phucan.vietnix.tech vào ô Domain
 
-<img width="1646" height="909" alt="image" src="https://github.com/user-attachments/assets/22e766ef-bc8b-4724-86c4-a9c1cd87f327" />
+    Cơ sở dữ liệu Ở phần Database nhấn chọn MySQL. Lúc này hệ thống tự sinh ra các dòng Tên, Người dùng và Mật khẩu.
+    🚨 Lưu ý quan trọng Bạn cần sao chép ngay 3 thông tin này vào file Note cá nhân vì đây là thông tin bắt buộc phải dùng ở bước cài đặt WordPress
 
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c02a9cc4-16a3-43d2-bcd7-409612f72c0b" />
-
-
-
+    Phiên bản PHP Nhấn chọn phiên bản PHP 7.4 hoặc PHP 8.1 tùy theo loại bạn đã cài trên máy chủ
 
