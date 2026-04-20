@@ -67,3 +67,18 @@ Tại bảng hiện ra giữ nguyên ở thẻ Create site và điền các nộ
 
     Phiên bản PHP Nhấn chọn phiên bản PHP 7.4 hoặc PHP 8.1 tùy theo loại bạn đã cài trên máy chủ
 
+## Thao tác 2: Tạo Website Laravel (laravel.phucan.vietnix.tech)
+
+Tại bảng hiện ra bạn giữ nguyên ở thẻ Create site và nhập chính xác các thông số như sau
+
+    Tên miền Nhập địa chỉ laravel.phucan.vietnix.tech
+
+    Cài đặt SSL Bạn hãy BỎ TÍCH ô Apply for SSL vì hiện tại chưa trỏ IP thật cho tên miền này.
+
+    Mô tả và Đường dẫn Bạn cứ để hệ thống tự động điền theo tên miền.
+
+    Cơ sở dữ liệu Tại phần Database bạn nhấn chọn MySQL. Lúc này hệ thống tự sinh ra Tên, Người dùng và Mật khẩu.
+    🚨 Lưu ý cực kỳ quan trọng Bạn hãy sao chép ngay các thông tin Database này đặc biệt là Mật khẩu dán vào file Note. Lát nữa khi tải mã nguồn Laravel lên bạn bắt buộc phải điền thông tin này vào file cấu hình .env thì web mới chạy được.
+
+    Phiên bản PHP Nhấn chọn phiên bản PHP bạn đã cài đặt trên máy chủ thường là PHP 8.1 hoặc PHP 8.2.
+
