@@ -13,3 +13,47 @@ Quy trình bắt đầu bằng việc cài đặt aaPanel để chuyển đổi 
    + Phân tầng Caching (Bộ nhớ đệm): Phân biệt rõ sự khác biệt giữa tối ưu hóa ở tầng ứng dụng (WP-Optimize: dọn rác, nén ảnh) và tối ưu hóa ở tầng máy chủ (LiteSpeed Cache: phản hồi HTML tĩnh nhanh mà không cần thực thi PHP/SQL).
 
    + Điều kiện triển khai LiteSpeed Cache: Chỉ hoạt động hiệu quả nhất khi phần cứng máy chủ chạy phần mềm Web Server là LiteSpeed (như hệ thống của Vietnix), giúp tận dụng sức mạnh xử lý trực tiếp từ tầng hệ thống thay vì thông qua mã nguồn PHP thông thường.
+
+
+# **Giai đoạn 1: Cài đặt hệ quản trị aaPanel lên VPS**
+
+Mục tiêu của giai đoạn này là biến cái VPS chỉ có dòng lệnh đen trắng của bạn thành một trang quản trị có giao diện web dễ dùng.
+Bước 1: Chạy lệnh cài đặt
+
+Bạn truy cập vào Terminal (SSH vào root@221.132.21.141) và dán duy nhất lệnh này:
+```
+wget -O install.sh http://www.aapanel.com/script/install-ubuntu_6.0_en.sh && sudo bash install.sh
+```
+
+Hệ thống sẽ hỏi bạn có muốn cài đặt aaPanel vào thư mục /www không? Bạn gõ y rồi nhấn Enter.
+Bước 2: Chờ đợi và Lưu thông tin
+
+Quá trình này mất khoảng 2-5 phút. Khi kết thúc, màn hình sẽ hiện lên một cái khung chứa thông tin quan trọng. Bạn phải copy và lưu lại 3 dòng sau:
++  Outer Login URL:  **https://221.132.21.141:31128/e1b82c79**
+    
++  username: **rohugz55**
+    
++ password: **cbfc5207**
+
+# **Giai đoạn 2: Thiết lập môi trường LNMP**
+Bước 1: Bỏ qua bảng đăng ký
+
+Trong hình bạn gửi, có một cái bảng hiện lên yêu cầu đăng ký tài khoản aaPanel.
+
+    Bạn hãy nhấn nút Skip ở góc dưới cùng bên phải của cái bảng đó để vào thẳng bên trong. Không cần thiết phải đăng ký lúc này.
+
+# **Bước 2: Chọn bộ cài đặt LNMP**
+
+Sau khi nhấn Skip, aaPanel sẽ tự động hiện ra một bảng chọn có tiêu đề là "Recommended software stacks". Bạn hãy chọn cột bên trái (LNMP) và chọn các phiên bản như sau:
+
+    Nginx: Chọn bản mới nhất (thường là 1.22 hoặc 1.24).
+
+    MySQL: Chọn bản 5.7 (ổn định và nhẹ nhất cho Lab).
+
+    PHP: Chọn bản 7.4 hoặc 8.1 (để chạy WordPress mượt nhất).
+
+    phpMyAdmin: Chọn bản 5.0 trở lên.
+
+    FTP: Không cần thiết, có thể bỏ qua hoặc để mặc định.
+
+=> Quan trọng: Ở phía dưới, hãy chọn chế độ Fast (màu xanh) thay vì Compiled để tiết kiệm thời gian. Sau đó nhấn nút One-click.
