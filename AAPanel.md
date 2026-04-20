@@ -57,3 +57,15 @@ Sau khi nhấn Skip, aaPanel sẽ tự động hiện ra một bảng chọn có
     FTP: Không cần thiết, có thể bỏ qua hoặc để mặc định.
 
 => Quan trọng: Ở phía dưới, hãy chọn chế độ Fast (màu xanh) thay vì Compiled để tiết kiệm thời gian. Sau đó nhấn nút One-click.
+
+<img width="817" height="403" alt="image" src="https://github.com/user-attachments/assets/5f7d6641-387a-4e3c-9859-4e8da63c80a0" />
+
+
+<img width="1646" height="909" alt="image" src="https://github.com/user-attachments/assets/22e766ef-bc8b-4724-86c4-a9c1cd87f327" />
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c02a9cc4-16a3-43d2-bcd7-409612f72c0b" />
+
+
+
+
