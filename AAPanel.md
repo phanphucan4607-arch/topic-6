@@ -57,6 +57,9 @@ Sau khi nhấn Skip, aaPanel sẽ tự động hiện ra một bảng chọn có
 
     FTP: Không cần thiết, có thể bỏ qua hoặc để mặc định.
 
+<img width="1802" height="863" alt="image" src="https://github.com/user-attachments/assets/a32cd509-7e9d-4cad-899d-97e620bda8d0" />
+
+
 ## Thao tác 1 Tạo Website WordPress (wp.phucan.vietnix.tech)
 **Bước 1: Tạo Website & Database trên aaPanel**
 + vào website -> add site.
@@ -278,10 +281,12 @@ Upload xong, chuột phải vào file đó -> Chọn Unzip (Giải nén).
 
 Giải nén xong, vào trang Admin WordPress -> mục Plugins -> Tìm Rank Math Pro và bấm Activate.
 
+<img width="1802" height="863" alt="image" src="https://github.com/user-attachments/assets/1f0c9c5d-68e7-4cf3-b872-59e469d5008a" />
+
 <img width="847" height="747" alt="image" src="https://github.com/user-attachments/assets/c5e94807-0459-4afa-aa05-109f98d4249d" />
 
-
 **🎨 QUY TRÌNH UP THEME DIVI**
+
 + Vào Admin WordPress -> Giao diện (Appearance) -> Giao diện (Themes).
 
 + Bấm nút Thêm mới (Add New) ở phía trên cùng.
@@ -291,6 +296,9 @@ Giải nén xong, vào trang Admin WordPress -> mục Plugins -> Tìm Rank Math 
 + Chọn file Divi.zip từ máy tính và bấm Cài đặt ngay (Install Now).
 
 <img width="865" height="568" alt="image" src="https://github.com/user-attachments/assets/2504c86a-d5f2-47ea-b610-09c5f6465ac3" />
+
++ Kích hoạt
+  
 
 
 
