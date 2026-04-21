@@ -178,3 +178,11 @@ http://laravel.phucan.vietnix.tech
 <img width="1837" height="1002" alt="image" src="https://github.com/user-attachments/assets/75e718a7-6f2f-43ae-947d-f2edb159d030" />
 
 
+
+tiến hành import và giai nén 
+
+<img width="1174" height="475" alt="image" src="https://github.com/user-attachments/assets/03f17b76-9a12-4add-824f-3a01c50d951e" />
+
+<img width="1174" height="475" alt="image" src="https://github.com/user-attachments/assets/db78ad3f-ce1e-4c86-bf66-1d46b821a821" />
+
+
