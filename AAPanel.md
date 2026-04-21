@@ -267,10 +267,29 @@ http://laravel.phucan.vietnix.tech
 
 
 
-tiến hành import và giai nén 
+**tiến hành import và giai nén**
 
-<img width="1174" height="475" alt="image" src="https://github.com/user-attachments/assets/03f17b76-9a12-4add-824f-3a01c50d951e" />
+Vào Files -> wp-content/plugins/.
 
-<img width="1174" height="475" alt="image" src="https://github.com/user-attachments/assets/db78ad3f-ce1e-4c86-bf66-1d46b821a821" />
+Bấm Upload -> Chọn file seo-by-rank-math-pro.zip từ máy tính.
+
+Upload xong, chuột phải vào file đó -> Chọn Unzip (Giải nén).
+
+Giải nén xong, vào trang Admin WordPress -> mục Plugins -> Tìm Rank Math Pro và bấm Activate.
+
+<img width="847" height="747" alt="image" src="https://github.com/user-attachments/assets/c5e94807-0459-4afa-aa05-109f98d4249d" />
+
+
+**🎨 QUY TRÌNH UP THEME DIVI**
++ Vào Admin WordPress -> Giao diện (Appearance) -> Giao diện (Themes).
+
++ Bấm nút Thêm mới (Add New) ở phía trên cùng.
+
++ Bấm tiếp nút Tải giao diện lên (Upload Theme).
+
++ Chọn file Divi.zip từ máy tính và bấm Cài đặt ngay (Install Now).
+
+<img width="865" height="568" alt="image" src="https://github.com/user-attachments/assets/2504c86a-d5f2-47ea-b610-09c5f6465ac3" />
+
 
 
