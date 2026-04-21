@@ -56,17 +56,37 @@ Sau khi nhấn Skip, aaPanel sẽ tự động hiện ra một bảng chọn có
 
     FTP: Không cần thiết, có thể bỏ qua hoặc để mặc định.
 
-## Tạo Website WordPress (wp.phucan.vietnix.tech)
+## Thao tác 1 Tạo Website WordPress (wp.phucan.vietnix.tech)
+**Bước 1: Tạo Website & Database trên aaPanel**
++ vào website -> add site.
 
-Tại bảng hiện ra giữ nguyên ở thẻ Create site và điền các nội dung như sau
++ nhập domain: wp phucan.vietnix.tech
 
-    Tên miền Nhập chính xác địa chỉ wp.phucan.vietnix.tech vào ô Domain
++ Mục **Database**: chọn MSQL --> đặt tên: sql_wp_phhucan
 
-    Cơ sở dữ liệu Ở phần Database nhấn chọn MySQL. Lúc này hệ thống tự sinh ra các dòng Tên, Người dùng và Mật khẩu.
-    🚨 Lưu ý quan trọng Bạn cần sao chép ngay 3 thông tin này vào file Note cá nhân vì đây là thông tin bắt buộc phải dùng ở bước cài đặt WordPress
++ Mục **PHP Version**: chọn 8.1 hoặc 3.3
 
-    Phiên bản PHP Nhấn chọn phiên bản PHP 7.4 hoặc PHP 8.1 tùy theo loại bạn đã cài trên máy chủ
++  Nhấn Submit
 
+**Bước 2: Xử lý bộ code (Source Code)**
++ Vào Files -> Truy cập thư mục web vừa tạo.
+
++ Xóa sạch các file mặc định mà aaPanel tự tạo (như index.html, 404.html).
+
++ Upload file source code (.zip) của bạn lên và Extract (Giải nén).
+
++ Đảm bảo các file nằm ngay thư mục gốc (vừa mở thư mục web là thấy wp-admin, wp-content liền).
+
+**Bước 3: Cấu hình "đầu não" wp-config.php**
+
+Đây là bước bạn vừa làm xong. Mở file wp-config.php và điền chuẩn:
+
+    Database: Điền đúng tên, user, pass vừa tạo ở Bước 1.
+
+    Table Prefix: Phải khớp với database cũ (của bạn là Sa3QIZ_).
+
+    Fix URL: Thêm 2 dòng này ở cuối file (trước dòng That's all, stop editing):
+    
 ## Thao tác 2: Tạo Website Laravel (laravel.phucan.vietnix.tech)
 Làm tuong tự như wp lưu ý lưu lại thong tin su khi tạo xong
 
