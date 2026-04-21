@@ -1,4 +1,4 @@
-<img width="851" height="551" alt="image" src="https://github.com/user-attachments/assets/889eb2fa-5162-4d5b-baed-c01a39eb0563" />**Luồng thực hiện (Workflow)**
+**Luồng thực hiện (Workflow)**
 
 Quy trình bắt đầu bằng việc cài đặt aaPanel để chuyển đổi từ quản lý dòng lệnh sang quản trị qua giao diện web, thiết lập môi trường LNMP (Nginx, MySQL, PHP) làm nền tảng cho website. Sau đó, tiến hành khai báo hai tên miền và cài đặt WordPress, sử dụng All-in-One WP Migration để xuất toàn bộ dữ liệu (bao gồm cả mã nguồn và cơ sở dữ liệu đã được mã hóa chuỗi) từ máy chủ cũ và nhập vào máy chủ mới nhằm đảm bảo tính đồng bộ. Khi website đã hoạt động, bước tiếp theo là cài đặt các công cụ chức năng như Rank Math SEO để tối ưu tìm kiếm, Elementor/Divi để thiết kế giao diện kéo thả, và cuối cùng là tối ưu hóa hiệu suất bằng cách phối hợp giữa WP-Optimize (dọn dẹp định kỳ cơ sở dữ liệu) và LiteSpeed Cache (lưu trữ bản sao tĩnh ở tầng máy chủ) để tăng tốc độ tải trang tối đa.
 
