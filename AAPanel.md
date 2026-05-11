@@ -29,11 +29,10 @@ Hệ thống sẽ hỏi bạn có muốn cài đặt aaPanel vào thư mục /ww
 Bước 2: Chờ đợi và Lưu thông tin
 
 Quá trình này mất khoảng 2-5 phút. Khi kết thúc, màn hình sẽ hiện lên một cái khung chứa thông tin quan trọng. Bạn phải copy và lưu lại 3 dòng sau:
-+  Outer Login URL:  **https://221.132.21.141:31128/e1b82c79**
-    
--Username: rohugz55
-
-|-New password: admin123
+aaPanel Internet Address: https://221.132.21.141:28222/199dc714
+aaPanel Internal Address: https://221.132.21.141:28222/199dc714
+username: zfbxbbae
+password: 904be04f
 
 
 # **Giai đoạn 2: Thiết lập môi trường LNMP**
